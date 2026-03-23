@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Change Button</title>
+    <style>
+        body { text-align: center; margin-top: 100px; font-family: Arial; }
+        button { padding: 15px 30px; font-size: 16px; }
+    </style>
+</head>
+<body>
+    <h2>Click the Button to Change Its Color</h2>
+    <button onclick="changeColor(this)">Click Me</button>
+
+    <script>
+        function changeColor(btn) {
+            btn.style.backgroundColor = btn.style.backgroundColor === 'orange' ? 'blue' : 'orange';
+            btn.style.color = 'white';
+        }
+    </script>
+</body>
+</html>

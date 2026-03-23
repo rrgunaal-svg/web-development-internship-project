@@ -1,0 +1,191 @@
+<!-- File: enhanced_internship_landing.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Developer Internship – Cognifyz Technologies</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ec7c54, #70d8a4);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background: #45ade1;
+      color: rgb(0, 0, 0);
+      padding: 15px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: rgb(0, 0, 0);
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #4B0082;
+      color: white;
+      padding: 12px 30px;
+      margin-top: 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background: #6A0DAD;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .image-size{
+        height: 200px;
+        width: 250px;
+        border-radius: 15px;
+        margin-right: 16px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .faq h4 {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <div class="d-flex">
+        <img src="https://user-images.githubusercontent.com/131132617/261537198-e5657d8f-1b7f-40e1-ba08-75cbdd09c429.jpg" class="image-size"/>
+        <div class="flex-row">
+            <h1>Web Developer Internship at Cognifyz Technologies</h1>
+            <p>Join a fast-paced program to elevate your full stack skills</p>   
+        </div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#benefits">Benefits</a>
+    <a href="#apply">Apply</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About the Program</h2>
+    <p>
+      The Web Developer Internship at Cognifyz Technologies provides students with an opportunity to work on real-world projects and collaborate with experienced mentors. The program is ideal for students who want to build strong foundations in HTML, CSS, JavaScript, and modern frameworks.
+    </p>
+    <p>
+      Duration: 4–8 weeks | Mode: Online | Flexible hours
+    </p>
+  </section>
+
+  <section id="benefits">
+    <h2>Why Join Us?</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Real Projects</h3>
+        <p>Get hands-on experience with live projects to showcase on your resume and GitHub.</p>
+      </div>
+      <div class="card">
+        <h3>Mentorship</h3>
+        <p>Learn from professionals who guide you through your development journey.</p>
+      </div>
+      <div class="card">
+        <h3>Certificate & Stipend</h3>
+        <p>Earn a certificate of completion and become eligible for stipends with top performance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <h4>Do I need prior experience?</h4>
+    <p>Basic knowledge of HTML and CSS is preferred, but not mandatory.</p>
+    <h4>Is this a paid internship?</h4>
+    <p>The program offers performance-based stipends for select interns.</p>
+    <h4>What is the daily time commitment?</h4>
+    <p>You can commit 2–3 hours per day as per your schedule.</p>
+  </section>
+
+  <section id="apply">
+    <h2>Apply Now</h2>
+    <form onsubmit="alert('Form submitted!'); return false;">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Why are you interested?" rows="4" required></textarea>
+      <button class="cta-button" type="submit">Submit Application</button>
+    </form>
+  </section>
+
+  <footer id="contact">
+    <p>Contact us: contact@cognifyz.com | www.cognifyz.com</p>
+    <p>LinkedIn: @cognifyz-technologies | Instagram: @cognifyz_tech</p>
+  </footer>
+
+</body>
+</html>

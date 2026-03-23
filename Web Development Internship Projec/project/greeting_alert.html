@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greeting Alert</title>
+    <script>
+        function showGreeting() {
+            const hour = new Date().getHours();
+            let greeting = "";
+
+            if (hour < 12) {
+                greeting = "Good Morning!";
+            } else if (hour < 18) {
+                greeting = "Good Afternoon!";
+            } else {
+                greeting = "Good Evening!";
+            }
+
+            alert(greeting);
+        }
+    </script>
+</head>
+<body onload="showGreeting()">
+    <h2>Greeting Alert Based on Time</h2>
+    <p>This page shows a greeting based on your current time.</p>
+</body>
+</html>

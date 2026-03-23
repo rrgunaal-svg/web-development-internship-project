@@ -1,0 +1,51 @@
+<!-- File: image_gallery.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 30px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .thumbnail {
+            width: 100px;
+            height: auto;
+            cursor: pointer;
+            border: 2px solid #ccc;
+            transition: 0.3s;
+        }
+        .thumbnail:hover {
+            border-color: #333;
+        }
+        #main-image {
+            max-width: 400px;
+            margin-bottom: 20px;
+            border: 4px solid #555;
+        }
+    </style>
+</head>
+<body>
+    <h2>Image Gallery</h2>
+    <img id="main-image" src="https://cognifyz.com/wp-content/uploads/2023/11/cognifyz-1.png" alt="Main Display">
+    <div class="gallery">
+        <img class="thumbnail" src="https://cognifyz.com/wp-content/uploads/2022/06/rocket-2.png" onclick="showImage(this)">
+        <img class="thumbnail" src="https://cognifyz.com/wp-content/uploads/2022/06/sfsdg.png" onclick="showImage(this)">
+        <img class="thumbnail" src="https://cognifyz.com/wp-content/uploads/2022/03/fdfdsghds.png" onclick="showImage(this)">
+    </div>
+
+    <script>
+        function showImage(img) {
+            document.getElementById("main-image").src = img.src.replace("100x75", "400x300");
+        }
+    </script>
+</body>
+</html>

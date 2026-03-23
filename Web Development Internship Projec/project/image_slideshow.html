@@ -1,0 +1,49 @@
+<!-- File: image_slideshow.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Slideshow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .slideshow {
+            max-width: 600px;
+            margin: auto;
+            border: 5px solid #333;
+        }
+        .slideshow img {
+            width: 100%;
+            height: auto;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Auto Image Slideshow</h2>
+    <div class="slideshow">
+        <img class="slide" src="https://cognifyz.com/wp-content/uploads/2023/11/cognifyz-1.png">
+        <img class="slide" src="https://cognifyz.com/wp-content/uploads/2022/06/sfsdg.png">
+        <img class="slide" src="https://cognifyz.com/wp-content/uploads/2022/03/fdfdsghds.png">
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.getElementsByClassName("slide");
+
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex = (slideIndex + 1) % slides.length;
+            slides[slideIndex].style.display = "block";
+            setTimeout(showSlides, 2500);
+        }
+
+        showSlides();
+    </script>
+</body>
+</html>

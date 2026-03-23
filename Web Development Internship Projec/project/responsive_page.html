@@ -1,0 +1,42 @@
+<!-- File: responsive_page.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .box {
+            flex: 1;
+            padding: 20px;
+            margin: 10px;
+            background-color: lightgray;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .box {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Responsive Design with CSS Media Queries</h2>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+</body>
+</html>
